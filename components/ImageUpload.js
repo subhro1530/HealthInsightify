@@ -7,6 +7,12 @@ const ImageUpload = () => {
   const [diagnosis, setDiagnosis] = useState(null);
   const [model, setModel] = useState(null);
 
+  const preprocessImage = (image) => {
+    // Add your image processing logic here
+    // This function should return the processed image data
+    return image;
+  };
+
   const onDrop = useCallback(
     async (acceptedFiles) => {
       const image = acceptedFiles[0];
